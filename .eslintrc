@@ -1,0 +1,30 @@
+{
+    "extends": [
+        "arenanet",
+        "plugin:jest/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "svelte3",
+        "jest"
+    ],
+    "env": {
+        "browser": true,
+        "node": true,
+        "jest": true
+    },
+    "overrides": [
+        {
+            "files": "*.svelte",
+            "processor": "svelte3/svelte3"
+        }
+    ],
+    "settings": {
+        "jest": {
+            "version": 26
+        }
+    }
+}
